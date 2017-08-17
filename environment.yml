@@ -16,3 +16,4 @@ dependencies:
   - phantomjs
   - fastparquet
   - python-snappy
+  - cffi
