@@ -70,14 +70,14 @@ def animate_update():
     slider.value = year
 
 def animate():
-    if button.label == '► Play':
-        button.label = '❚❚ Pause'
+    if button.label == '\u25B6 Play':
+        button.label = '\u23F8 Pause'
         curdoc().add_periodic_callback(animate_update, 1000)
     else:
-        button.label = '► Play'
+        button.label = '\u25B6 Play'
         curdoc().remove_periodic_callback(animate_update)
 
-button = Button(label='► Play', width=60)
+button = Button(label='\u25B6 Play', width=60)
 button.on_click(animate)
 
 # Combine the bokeh plot on plot.state with the widgets
